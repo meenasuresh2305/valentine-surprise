@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>For My Love ❤️</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #ff758c, #ff7eb3);
+            text-align: center;
+            color: white;
+        }
+
+        .container {
+            padding: 30px;
+        }
+
+        button {
+            padding: 12px 25px;
+            font-size: 18px;
+            border: none;
+            border-radius: 25px;
+            background: white;
+            color: #ff4d6d;
+            cursor: pointer;
+            margin-top: 40px;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        h1 {
+            margin-top: 20px;
+        }
+
+        .message {
+            font-size: 18px;
+            width: 85%;
+            margin: 20px auto;
+            line-height: 1.6;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .gallery img {
+            width: 250px;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+        }
+
+        .footer-message {
+            font-size: 22px;
+            margin: 30px;
+            font-weight: bold;
+        }
+
+        @media (max-width: 600px) {
+            .gallery img {
+                width: 90%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+<button onclick="startLove()">Click Here My Love 💌</button>
+
+<div id="content" class="hidden">
+
+    <h1>I am so lucky to have you 💖</h1>
+
+    <div class="message">
+        Every moment with you is special 💕 <br>
+        Your smile makes my day brighter ☀️ <br>
+        Your love makes my life beautiful ❤️ <br>
+        I promise to stand by you forever and ever 😘
+    </div>
+
+    <div class="gallery">
+        <img src="images/pic1.jpg">
+        <img src="images/pic2.jpg">
+        <img src="images/pic3.jpg">
+        <img src="images/pic4.jpg">
+    </div>
+
+    <div class="footer-message">
+        I Love You Forever 💍❤️
+    </div>
+
+</div>
+
+</div>
+
+<audio id="bgmusic">
+    <source src="song.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+function startLove() {
+    document.getElementById("content").style.display = "block";
+    var music = document.getElementById("bgmusic");
+    music.play();
+}
+</script>
+
+</body>
+</html>
